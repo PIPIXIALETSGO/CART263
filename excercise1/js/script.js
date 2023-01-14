@@ -136,15 +136,15 @@ function checkResult() {
 function displayMessage() {
   textSize(100);
   if (winner) {
-    text(currPlayer + "  won", 550, 1050);
-    
+    text(currPlayer + "  won !", 520, 1050);
     setTimeout(resetGame, 1000);
   }
 }
 function resetGame() {
-  console.log(board);
-  winner = false;
   counter = 0;
+  addScore()
+  currPlayer='X'
+  winner=false
   board = [
     [" ", "", " "], //[0][0],[0][1],[0][2]
     ["", " ", ""], //[1][0],[1][1],[1][2]
@@ -179,10 +179,15 @@ function drawBoard(){
     reset=false
     
 }
+function addScore(){
+    if(winner){
+        if(currPlayer==="X"){
+            xScore+=1
+        }else{
+            oScore+=1
+        }
+    }
 
-//////////////////miss adding score///////////////
-if(currPlayer==="X"){
-    xScore+=1
-}else{
-    yScore+=1
+    
 }
+//////////////////miss adding score///////////////

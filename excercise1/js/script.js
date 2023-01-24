@@ -52,7 +52,7 @@ Calling all the functions to do their things
 function mouseClicked() {
   if (counter % 2 === 0) {
     currPlayer = player[0];
-  } else {
+  } else { 
     currPlayer = player[1];
   }
   /**

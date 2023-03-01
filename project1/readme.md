@@ -2,7 +2,7 @@
 
 Theme: need a bit of help to get going
 
-It starts with a 'hair ball in the center', all the particles are unorgnized 
-Once mouse is pressed, they will shoot out from the center and bouce on the walls.
-Some of them will jitters and accelerate suddenly into random direction
-Using mouse to collect all the particles to see what kind of pattern they can create
+All particles are floating around the space, they are lazy,colorless,slow and unorgnized.
+Once user starts to move around their cursor, the particles will be dragged into the spinning cirlcr attached to the cursor.
+At this point, they become to have color
+As time passes, the circle gets bigger and starts to create some beautiful pattern

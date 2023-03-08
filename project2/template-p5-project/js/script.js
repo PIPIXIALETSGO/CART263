@@ -52,8 +52,6 @@ function draw() {
   background(0, 4.5);
   translate(width / 2, height / 2);
   labelDisplay()
-
-  // image(mapimg, 0, 0);
   for (var ii = 0; ii < numOfData; ii++) {
     //loop through all the particles
     airport[ii].show();
@@ -174,85 +172,7 @@ class Airport {
         
       }
       ellipse(this.x, this.y, 1, 1);
-      // if the x distance between 2 points is a positive number, it means that it's coming from left to right,vice versa
-      // so the airplanes will always facing the right direction based on this number
-      // if (this.xDistance>0) {
-      //   // Airplane body
-      //   ellipse(this.x, this.y, 12, 2);
-      //   // Airplane wing on the top
-      //   triangle(
-      //     this.x - 1,
-      //     this.y,
-      //     this.x + 2.3,
-      //     this.y,
-      //     this.x - 3,
-      //     this.y - 5
-      //   );
-      //   // // Airplane wing on the bottom
-      //   triangle(
-      //     this.x - 1,
-      //     this.y,
-      //     this.x + 2.3,
-      //     this.y,
-      //     this.x - 3,
-      //     this.y + 5
-      //   );
-      //   // // Airplane tail
-      //   triangle(
-      //     this.x - 6.5,
-      //     this.y - 0.3,
-      //     this.x - 4,
-      //     this.y,
-      //     this.x - 7,
-      //     this.y + 2
-      //   );
-      //   triangle(
-      //     this.x - 6.5,
-      //     this.y - 0.3,
-      //     this.x - 4,
-      //     this.y,
-      //     this.x - 7,
-      //     this.y - 2
-      //   );
-      // } else {
-      //   // Airplane body
-      //   ellipse(this.x, this.y, 12, 2);
-      //   // Airplane wing on the top
-      //   triangle(
-      //     this.x - 1,
-      //     this.y,
-      //     this.x + 2.3,
-      //     this.y,
-      //     this.x + 3,
-      //     this.y - 5
-      //   );
-      //   // // Airplane wing on the bottom
-      //   triangle(
-      //     this.x - 1,
-      //     this.y,
-      //     this.x + 2.3,
-      //     this.y,
-      //     this.x + 3,
-      //     this.y + 5
-      //   );
-      //   // // Airplane tail
-      //   triangle(
-      //     this.x + 6.5,
-      //     this.y - 0.3,
-      //     this.x + 4,
-      //     this.y,
-      //     this.x + 7,
-      //     this.y + 2
-      //   );
-      //   triangle(
-      //     this.x + 6.5,
-      //     this.y - 0.3,
-      //     this.x + 4,
-      //     this.y,
-      //     this.x + 7,
-      //     this.y - 2
-      //   );
-      // }
+    
     }
   }
 }
